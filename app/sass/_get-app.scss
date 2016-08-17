@@ -1,0 +1,39 @@
+.get-app {
+  position: relative;
+  width: 670px;
+  margin: 0 auto;
+  padding: 23px 0 56px;
+}
+.get-app__items {
+  width: 600px;
+  margin: 0 auto;
+}
+.get-app__area {
+  position: relative;
+  height: 387px;
+  border: 1px solid #323232;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+}
+.get-app__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 17px 0 24px 0;
+  background: rgba(0,0,0,0.6);
+  font-size: 22px;
+  line-height: 26px;
+  @include main-font4();
+
+  p {
+    margin: 0 0 17px;
+  }
+
+}
+

@@ -1,0 +1,84 @@
+.albums {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include align-items(flex-start);
+  @include justify-content(flex-start);
+  position: relative;
+  margin: 0 -6px;
+}
+.albums__item {
+  width: 16.666%;
+  text-align: center;
+  color: #fff;
+  margin: 0 0 40px 0;
+  padding: 0 3px;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+
+  &:hover {
+
+    .albums__performer {
+      color: #fff;
+    }
+    .albums__name {
+      color: #c233bd;
+    }
+
+  }
+
+}
+.albums__pic {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-height: 150px;
+  max-width: 150px;
+  margin: 0 auto 6px;
+  -webkit-transition: border 200ms ease-in-out;
+  transition: border 200ms ease-in-out;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+}
+.albums__performer {
+  display: block;
+  @include main-font3();
+  text-transform: uppercase;
+  color: #c233bd;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+.albums__name {
+  display: block;
+  @include main-font4();
+  font-size: 14px;
+  line-height: 21px;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+.albums_2 {
+  width: 67.45%;
+
+  &:after {
+    position: absolute;
+    right: -470px;
+    bottom: -82px;
+    width: 361px;
+    height: 552px;
+    background: url("../img/top-chef.png") no-repeat;
+    background-size: cover;
+    content: '';
+  }
+
+  .albums__item {
+    width: 25%;
+  }
+
+}
+

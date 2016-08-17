@@ -1,0 +1,129 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  height: 61px;
+  min-width: 282px;
+  padding: 0 40px;
+  border: 1px solid $btn-border-color;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  background: rgb(8,142,255);
+  background: -moz-linear-gradient(top,  rgba(8,142,255,1) 0%, rgba(9,141,252,1) 12%, rgba(7,129,230,1) 50%, rgba(9,128,230,1) 53%, rgba(8,112,199,1) 88%, rgba(7,107,192,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(8,142,255,1) 0%,rgba(9,141,252,1) 12%,rgba(7,129,230,1) 50%,rgba(9,128,230,1) 53%,rgba(8,112,199,1) 88%,rgba(7,107,192,1) 100%);
+  background: linear-gradient(to bottom,  rgba(8,142,255,1) 0%,rgba(9,141,252,1) 12%,rgba(7,129,230,1) 50%,rgba(9,128,230,1) 53%,rgba(8,112,199,1) 88%,rgba(7,107,192,1) 100%);
+  color: $btn-color;
+  @include main-font6();
+
+  &:hover {
+    background: rgb(7,107,192);
+    background: -moz-linear-gradient(top,  rgba(7,107,192,1) 0%, rgba(8,112,199,1) 12%, rgba(9,128,230,1) 47%, rgba(7,129,230,1) 50%, rgba(9,141,252,1) 88%, rgba(8,142,255,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(7,107,192,1) 0%,rgba(8,112,199,1) 12%,rgba(9,128,230,1) 47%,rgba(7,129,230,1) 50%,rgba(9,141,252,1) 88%,rgba(8,142,255,1) 100%);
+    background: linear-gradient(to bottom,  rgba(7,107,192,1) 0%,rgba(8,112,199,1) 12%,rgba(9,128,230,1) 47%,rgba(7,129,230,1) 50%,rgba(9,141,252,1) 88%,rgba(8,142,255,1) 100%);
+  }
+  &:active {
+    background: rgb(7,107,192);
+  }
+  &:after {
+    position: absolute;
+    top: 50%;
+    right: 26px;
+    width: 15px;
+    height: 19px;
+    background: url("../img/download.png") no-repeat center;
+    background-size: contain;
+    content: '';
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  span {
+    @include flexbox();
+    @include flex-direction();
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    @include align-items(center);
+    position: relative;
+    height: 100%;
+  }
+
+}
+.btn_2 {
+  border: none;
+  height: 38px;
+  min-width: 231px;
+  padding: 0 27px;
+  font-size: 13px;
+  line-height: 13px;
+  @include main-font2();
+  background: url("../img/chrome.png") no-repeat 95% center #0880e5;
+  -webkit-transition: background 200ms ease-in-out;
+  transition: background 200ms ease-in-out;
+
+  &:after {
+    display: none;
+  }
+  &:hover {
+    background: url("../img/chrome.png") no-repeat 95% center #086dc6;
+  }
+  &:active {
+    background: url("../img/chrome.png") no-repeat 95% center #08559d;
+  }
+
+  span {
+
+    &:before {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 6px 0 -18px;
+      font-size: 24px;
+      line-height: 24px;
+      content: '+';
+    }
+
+  }
+
+}
+.btn_3 {
+  border: 2px solid #9b2997;
+  height: 92px;
+  min-width: 334px;
+  padding: 0 27px;
+  font-size: 25px;
+  line-height: 25px;
+  @include main-font3();
+  background: rgb(206,54,201);
+  background: -moz-linear-gradient(top,  rgba(206,54,201,1) 0%, rgba(198,53,194,1) 26%, rgba(180,47,175,1) 66%, rgba(169,44,164,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(206,54,201,1) 0%,rgba(198,53,194,1) 26%,rgba(180,47,175,1) 66%,rgba(169,44,164,1) 100%);
+  background: linear-gradient(to bottom,  rgba(206,54,201,1) 0%,rgba(198,53,194,1) 26%,rgba(180,47,175,1) 66%,rgba(169,44,164,1) 100%);
+
+  &:after {
+    display: none;
+  }
+  &:hover {
+    background: rgb(169,44,164);
+    background: -moz-linear-gradient(top,  rgba(169,44,164,1) 0%, rgba(180,47,175,1) 34%, rgba(198,53,194,1) 74%, rgba(206,54,201,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(169,44,164,1) 0%,rgba(180,47,175,1) 34%,rgba(198,53,194,1) 74%,rgba(206,54,201,1) 100%);
+    background: linear-gradient(to bottom,  rgba(169,44,164,1) 0%,rgba(180,47,175,1) 34%,rgba(198,53,194,1) 74%,rgba(206,54,201,1) 100%);
+  }
+  &:active {
+    background: rgb(169,44,164);
+  }
+
+  span {
+
+    &:before {
+      display: inline-block;
+      vertical-align: top;
+      width: 15px;
+      height: 19px;
+      margin: 0 15px 0 -31px;
+      background: url("../img/download.png") no-repeat center;
+      background-size: contain;
+      content: '';
+    }
+
+  }
+
+}

@@ -1,0 +1,338 @@
+.site {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  min-width: 1000px;
+  min-height: 100%;
+  @include main-font1();
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  background: #fff;
+
+  &:after {
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 92px;
+    content: '';
+  }
+
+}
+.site_lp {
+  .site__header {
+    height: 100px;
+
+    .social-networks {
+      top: 39px;
+      right: 39px;
+    }
+
+  }
+  .site__header-inner {
+    height: 100px;
+
+  }
+  .site__content-layout {
+    border-top: 9px solid #ca35c6;
+  }
+  .site__footer-menu {
+    padding: 31px 100px 0 107px;
+    text-align: center;
+  }
+  .logo {
+    top: 8px;
+    left: 7px;
+  }
+
+  .site__footer-layout {
+
+    &:after {
+      position: absolute;
+      right: -57px;
+      bottom: 21px;
+      width: 252px;
+      height: 385px;
+      background: url("../img/top-chef.png") no-repeat;
+      background-size: cover;
+      content: '';
+    }
+
+  }
+
+}
+.site__header {
+  position: relative;
+  z-index: 3;
+  height: 183px;
+}
+.site__header-inner {
+  position: relative;
+  max-width: 1140px;
+  height: 183px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.site__header-menu {
+  padding: 85px 0 20px 16%;
+  font-size: 16px;
+  line-height: 18px;
+  @include main-font3();
+  text-align: center;
+
+  a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 7px 3px;
+    margin: 0 8px;
+    color: #000000;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-color 200ms ease-in-out;
+    transition: border-color 200ms ease-in-out;
+
+    &:hover {
+      border-color: #000;
+    }
+    &.active {
+      border-color: #000;
+      cursor: default;
+    }
+
+  }
+
+}
+.site__header-search {
+  position: absolute;
+  right: 50px;
+  top: 22px;
+  width: 376px;
+
+  input[type=search] {
+    display: block;
+    width: 100%;
+    height: 43px;
+    border: 1px solid #000;
+    background: transparent;
+    color: #adadad;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 7px;
+    @include main-font1();
+    -webkit-transition: border 200ms ease-in-out;
+    transition: border 200ms ease-in-out;
+    -webkit-appearance: none;
+
+     &:focus {
+       border-color: rgba(0, 168, 208, 0.51);
+     }
+
+  }
+}
+.site__header-search-go {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  border: none;
+  width: 36px;
+  height: 36px;
+  background: url("../img/search.png") no-repeat center #000;
+  background-size: 19px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+}
+.site__header-alphabet {
+  position: relative;
+  z-index: 1;
+  @include flexbox();
+  @include flex-direction();
+  @include flex-wrap(wrap);
+  @include justify-content(flex-end);
+  @include align-items(flex-start);
+}
+.site__header-alphabet-symbol {
+  @include flexbox();
+  @include flex-direction();
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  @include align-items(center);
+  width: 3.463%;
+  height: 36px;
+  margin-right: 1px;
+  background: #0d0d0d;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+  line-height: 22px;
+  @include main-font4();
+  -webkit-transition: background 200ms ease-in-out;
+  transition: background 200ms ease-in-out;
+
+  &:hover,
+  &.active{
+    background: #a82ca4;
+  }
+  &.active {
+    cursor: pointer;
+  }
+
+}
+.site__footer {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 92px;
+  background: #0d0d0d;
+  border-top: 7px solid #a82ca4;
+}
+.site__footer-layout {
+  position: relative;
+  max-width: 1070px;
+  height: 85px;
+  padding: 0 15px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 19px;
+}
+.site__footer-menu {
+  position: relative;
+  padding: 31px 3px 0 0;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: right;
+
+
+  a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 13px;
+    color: #fff;
+
+    &:first-child {
+      margin: 0;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+
+}
+.site__content {
+  position: relative;
+  z-index: 1;
+  max-width: 1070px;
+  padding: 0 15px 51px;
+  margin: 0 auto;
+}
+.site__content-layout {
+  position: relative;
+  width: 100%;
+  padding: 35px 30px 15px;
+  background: #0d0d0d;
+}
+.site__title-main {
+  position: relative;
+  margin: 0 0 27px;
+  font-size: 40px;
+  line-height: 59px;
+  color: #fff;
+  @include main-font5();
+  text-align: center;
+}
+.site__title-lp {
+  position: relative;
+  padding-bottom: 16px;
+  margin: 0 0 50px;
+  font-size: 30px;
+  line-height: 38px;
+  color: #fff;
+  @include main-font5();
+  text-align: center;
+
+  span {
+    display: block;
+    font-size: 36px;
+    line-height: 59px;
+    text-transform: uppercase;
+    @include main-font6();
+  }
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 152px;
+    height: 1px;
+    background: #fff;
+    content: '';
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+}
+.site__title {
+  position: relative;
+  margin: 0 0 33px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+  @include main-font4();
+  text-align: center;
+  text-transform: uppercase;
+
+  span {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+    padding: 4px 8px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+}
+.site__title_2 {
+  @include main-font2();
+  color: #c233bd;
+
+  span {
+    min-width: 152px;
+  }
+
+}
+input.site__input,
+textarea.site__input {
+  display: block;
+  width: 100%;
+  height: 36px;
+  margin: 0 0 19px;
+  background: #f3f3f3;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 17px;
+  @include main-font1();
+  color: #2c2c2c !important;
+  font-size: 13px;
+  line-height: 16px;
+  -webkit-transition: background 200ms ease-in-out;
+  transition: background 200ms ease-in-out;
+
+  &:focus {
+    background: #ebebeb;
+  }
+
+}
+textarea.site__input {
+  height: 151px;
+}
